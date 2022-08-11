@@ -1,0 +1,14 @@
+
+.tasklist__group
+{
+    padding: 10px;
+}
+
+.tasklist .tasklist__group li
+{
+    list-style-type: none;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px 0 10px 0;
+}
