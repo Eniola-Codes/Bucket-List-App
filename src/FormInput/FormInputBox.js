@@ -75,12 +75,16 @@ const FormInputBox = (props) => {
 
   return (
     <>
+    <div>
+     <h1 className={style.header}>My Bucket List</h1>
+     </div>
     {isError && <ErrorModal onRemove={onRemoveHandler} header={isError.header} body={isError.body} />}
       <Box className={style.input_box}>
         {!isInputing && <Button onConfirm={isInputingHandler}>Add New Task</Button>}
 
         {isInputing && (
           <>
+           
             <div>
               <label htmlFor="task-id">Task</label>
               <input

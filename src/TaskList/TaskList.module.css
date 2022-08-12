@@ -2,13 +2,14 @@
 .tasklist__group
 {
     padding: 10px;
+    margin: auto;
+    width: 500px;
+    list-style-type: none;
 }
 
-.tasklist .tasklist__group li
+@media only screen and (max-width: 576px)
 {
-    list-style-type: none;
-    border: 1px solid #EAEAEA;
-    border-radius: 5px;
-    padding: 8px;
-    margin: 10px 0 10px 0;
+    .tasklist__group {
+    width: 90%;
+  }
 }

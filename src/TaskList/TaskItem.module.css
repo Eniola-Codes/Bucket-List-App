@@ -1,0 +1,30 @@
+.task__list
+{
+    position: relative;
+    display: flex;
+    border: 1px solid #1C2033;
+    border-radius: 10px;
+    padding: 25px;
+    font-size: 14px;
+    margin: 25px 0 0 0;
+    background-color: #1B1E32;
+    color: #FFFFFF;
+}
+
+.task_item
+{
+    display: inline-block;
+    margin-left: auto;
+}
+
+.task_status
+{
+    display: inline-block;
+    position: absolute;
+    background-color: #33395f;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    top: -15px;
+    right: 15px;
+}

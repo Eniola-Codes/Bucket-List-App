@@ -26,12 +26,13 @@
     width: 500px;
     background-color: white;
     border-radius: 10px;
+    z-index: 10;
 }
 
 .modal_header
 {
     padding: 20px 20px 20px 20px;
-    background-color: rgb(1, 115, 214);
+    background-color: #2A2B42;
     border-radius: 10px 10px 0 0;
     color: white;
     font-weight: 500;

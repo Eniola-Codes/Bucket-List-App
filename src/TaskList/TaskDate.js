@@ -9,7 +9,7 @@ const TaskDate = (props) =>
 
     return (
         <>
-        {day} {month}, {year}
+      {year}, {month} {day}  
         </>
     );
 }
