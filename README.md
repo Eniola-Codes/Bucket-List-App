@@ -1,74 +1,45 @@
-# End Result
+# Bucket List application
+
+A BucketList application which you can use to set activities or task you want to do in the future, or you have dont in the past.
+
+**End Result**
 
 Click Link Here : https://bucketlistapp-by-eniola.netlify.app/
+# Description
 
-# Getting Started with Create React App
+**Details**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My bucket list application is used to set activities which you would love to do in the future, or that you have done in the past.
 
-## Available Scripts
+The application takes on three input from the user in a form which are :
 
-In the project directory, you can run:
+- The Task
+- The Date
+- Status (Which can take on only one of the three values below)
+    - Completed
+    - Not Completed
+    - Failed
 
-### `npm start`
+![Form](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/nav.png?raw=true)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The form comes with a validation, if you input an invalid value, you will get an error message in a modal and the form data will not be processed. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Error messsage](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/backdrop.png?raw=true)
 
-### `npm test`
+On the other hand, when you submit a valid value,an item is added to the bucket list
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Bucket list item](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/slider.png?raw=true) 
 
-### `npm run build`
+**Technologies**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Technologies i used to build this are React.js and css
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I used React.js framework to bootstrap this project because of the below functionalities : 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Seperation of concerns (Having leaner files and components by breaking down the code into smaller parts)
+- Prop drilling to pass some data from component to component with ease.
+- Css modules which prevent clashing of classnames around components therefore avoiding unwanted results
 
-### `npm run eject`
+# Installation and Running
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+git clone or pull the project using your terminal, open the project folder on your local laptop in a code editor and run "npm start" in your editors terminal.
