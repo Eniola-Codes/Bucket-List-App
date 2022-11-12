@@ -20,15 +20,15 @@ The application takes on three input from the user in a form which are :
     - Not Completed
     - Failed
 
-![Form](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/nav.png?raw=true)
+![Form](https://github.com/Eniola-Codes/Bucket-List-App/blob/main/src/asset/bucketform.png?raw=true)
 
 The form comes with a validation, if you input an invalid value, you will get an error message in a modal and the form data will not be processed. 
 
-![Error messsage](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/backdrop.png?raw=true)
+![Error messsage](https://github.com/Eniola-Codes/Bucket-List-App/blob/main/src/asset/bucketerror.png?raw=true)
 
 On the other hand, when you submit a valid value,an item is added to the bucket list
 
-![Bucket list item](https://github.com/Eniola-Codes/MovTime-Movie-App/blob/main/public/Assets/Images/slider.png?raw=true) 
+![Bucket list item](https://github.com/Eniola-Codes/Bucket-List-App/blob/main/src/asset/bucketitem.png?raw=true) 
 
 **Technologies**
 
