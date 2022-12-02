@@ -28,6 +28,7 @@ const FormInputBox = (props) => {
       task: task,
       date: new Date(dates),
       status: status,
+      id : Math.random()
     };
 
     if(taskInfo.task.trim() === '')
@@ -38,15 +39,6 @@ const FormInputBox = (props) => {
       );
       return;
     }
-
-    // if(taskInfo.date.getFullYear() === 'NaN')
-    // {
-    //   setIsError(
-    //     { header : 'inavlid Date Input',
-    //     body : 'Please select a date'}
-    //   );
-    //   return;
-    // }
 
     if(taskInfo.status.trim() === 'Select Status')
     {
@@ -76,7 +68,7 @@ const FormInputBox = (props) => {
   return (
     <>
     <div>
-     <h1 className={style.header}>My Bucket List</h1>
+     <h1 className={style.header}>My Bucket</h1>
      </div>
     {isError && <ErrorModal onRemove={onRemoveHandler} header={isError.header} body={isError.body} />}
       <Box className={style.input_box}>

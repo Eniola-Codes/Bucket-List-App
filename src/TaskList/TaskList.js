@@ -3,6 +3,14 @@ import style from "./TaskList.module.css";
 import TaskItem from "./TaskItem";
 
 const TaskList = (props) => {
+
+
+  // const onDeleteItemHandler = () => {
+  //   setNewTask((prevTodos) => {
+  //     return prevTodos.filter(todo => todo.id !== todoId)
+  //   })
+  // };
+
   return (
     <div>
       <ul className={style.tasklist__group}>
@@ -11,6 +19,7 @@ const TaskList = (props) => {
         task={newTask.task}  
         date={newTask.date} 
         status={newTask.status}
+        onClick={props.onDeleteItem.bind(null, newTask.id)}
         />))}
         </ul>
     </div>
