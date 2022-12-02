@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import FullTaskInfo from "./FormInput/FullTaskInfo";
-import FullInputBox from './FormInput/FormInputBox';
+import FullInputBox from "./FormInput/FormInputBox";
 import TaskList from "./TaskList/TaskList";
 
 let dummyTask = [
@@ -22,7 +22,33 @@ let dummyTask = [
 const App = () => {
   let [newTask, setNewTask] = useState(dummyTask);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(
+        "https://my-bucket-f9503-default-rtdb.firebaseio.com/task"
+      );
+
+      const data = response.json();
+      setNewTask(data);
+    };
+
+    fetchData();
+  }, []);
+
   const endTaskInfoHandler = (endTask) => {
+    const sendReq = async () => {
+      const response = await fetch(
+        "https://my-bucket-f9503-default-rtdb.firebaseio.com/task",
+        {
+          method: "POST",
+          body: JSON.Stringify(),
+          headers: { "Content-type " : "application/json" },
+        }
+      );
+    };
+
+    sendReq();
+
     setNewTask((prevTask) => {
       return [endTask, ...prevTask];
     });
@@ -30,14 +56,14 @@ const App = () => {
 
   const onDeleteItemHandler = (todoId) => {
     setNewTask((prevTodos) => {
-      return prevTodos.filter(todo => todo.id !== todoId)
-    })
+      return prevTodos.filter((todo) => todo.id !== todoId);
+    });
   };
 
   return (
     <>
       <FullInputBox fullTask={endTaskInfoHandler} />
-      <TaskList items={newTask} onDeleteItem={onDeleteItemHandler}/>
+      <TaskList items={newTask} onDeleteItem={onDeleteItemHandler} />
     </>
   );
 };
